@@ -18,9 +18,9 @@ const App = () => {
     // console.log(enteredTodo);
     const newTodo = new Todos(enteredTodo);
     
-    setTodos((prevTodos) => {
-      prevTodos.concat(newTodo)
-    })
+   setTodos((prevTodos) => {
+    return prevTodos.concat(newTodo)
+   })
 
   }
   return (

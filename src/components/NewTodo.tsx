@@ -3,6 +3,7 @@ import React, { useRef } from "react"
 const NewTodos:React.FC<{enteredText: (text: string) => void}> = ({enteredText}) => {
     const inputRef = useRef<HTMLInputElement>(null)
     const handleFormSubmit = (e: React.FormEvent) => {
+        e.preventDefault()
         console.log('todo added');
         const todoValue = inputRef.current!.value
         enteredText(todoValue)
