@@ -34,6 +34,11 @@
 
 .card {
   padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+
 }
 
 .read-the-docs {
